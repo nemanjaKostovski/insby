@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { getProducts } from '@/lib/fetch';
-import { useState, useEffect } from 'react';
+import { getProducts } from "@/lib/fetch";
+import { useState, useEffect } from "react";
 
 export type Product = {
   id: number;

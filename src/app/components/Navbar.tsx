@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className='h-16 mt-5 border-b-2 text-right w-full'>
       <Link
-        className='rounded-full border-2 pl-1.5 pr-1.5 m-10 text-3xl text-red-600 hover:text-red-400'
+        className='rounded-full border-2 pl-2 pr-2 m-10 text-3xl text-red-600 hover:text-red-400'
         href='/login'
         onClick={logout}
       >

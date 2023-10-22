@@ -1,14 +1,14 @@
-'use client';
-import ProductCard from './components/ProductCard';
-import ProductData from './components/ProductData';
-import Navbar from './components/Navbar';
+"use client";
+import ProductCard from "./components/ProductCard";
+import ProductData from "./components/ProductData";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const products = ProductData();
   return (
     <main>
       <Navbar />
-      <div className='flex flex-col justify-center items-center'>
+      <div className="flex flex-col justify-center items-center">
         {products.length > 0 &&
           products.map((product) => (
             <ProductCard
