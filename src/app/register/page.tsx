@@ -55,10 +55,10 @@ const Register = () => {
         <p className='mt-2 mb-40 opacity-75 text-center'>
           Enter your details to get started
         </p>
-        <label className='opacity-75 mb-4 text-xs' htmlFor='email'>
+        <label className='opacity-75 mb-4 text-sm relative' htmlFor='email'>
           Email
           <input
-            className='block border-2 w-60 lg:w-96 p-2 border-black rounded-2xl mt-4 mb-4'
+            className='block border-2 w-60 h-11 lg:w-96 p-2 border-black rounded-full mt-4 mb-4 placeholder-black'
             type='text'
             id='email'
             name='email'
@@ -67,11 +67,18 @@ const Register = () => {
             placeholder='Enter your email address'
             autoFocus
           />
+          <Image
+            src='/email.png'
+            alt='Email'
+            width={20}
+            height={20}
+            className='absolute right-5 bottom-7'
+          />
         </label>
-        <label className='opacity-75 mb-4 text-xs' htmlFor='password'>
+        <label className='opacity-75 mb-4 text-sm' htmlFor='password'>
           Create a password
           <input
-            className='block border-2 w-60 lg:w-96 p-2 border-black rounded-2xl mt-4 mb-4'
+            className='block border-2 w-60 h-11 lg:w-96 p-2 border-black rounded-full mt-4 mb-4 placeholder-black'
             type='password'
             name='password'
             id='password'
@@ -80,10 +87,10 @@ const Register = () => {
             placeholder='Enter a strong password'
           />
         </label>
-        <label className='opacity-75 mb-4 text-xs' htmlFor='confirm'>
+        <label className='opacity-75 mb-4 text-sm' htmlFor='confirm'>
           Confirm password
           <input
-            className='block border-2 w-60 lg:w-96 p-2 border-black rounded-2xl mt-4 mb-4'
+            className='block border-2 w-60 h-11 lg:w-96 p-2 border-black rounded-full mt-4 mb-4 placeholder-black'
             type='password'
             name='confirmPassword'
             id='confirm'
@@ -93,7 +100,7 @@ const Register = () => {
           />
         </label>
         <button
-          className='bg-red-600 w-60 lg:w-96 rounded-2xl text-white p-2 font-bold'
+          className='bg-red-600 w-60 h-11 lg:w-96 rounded-full text-white p-2 font-bold'
           type='submit'
         >
           Sign up

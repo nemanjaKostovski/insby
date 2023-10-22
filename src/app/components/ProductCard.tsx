@@ -27,7 +27,7 @@ const ProductCard = ({
         className='rounded-3xl w-1/2'
       />
       <div className='ml-2 sm:ml-12 lg:mt-6 w-1/2 md:w-80 lg:w-[500px] relative'>
-        <h2 className='text-2xl'>{name}</h2>
+        <h2 className='text-2xl font-bold'>{name}</h2>
         <p className='hidden sm:block opacity-50 mt-4 overflow-hidden sm:h-32 md:h-48 lg:h-60'>
           {description}
         </p>

@@ -51,10 +51,10 @@ const Login = () => {
         onSubmit={handleLogin}
       >
         <h2 className='text-2xl font-bold'>Log in</h2>
-        <label className='opacity-75 mb-4 text-xs' htmlFor='email'>
+        <label className='opacity-75 mb-4 text-sm' htmlFor='email'>
           Email address
           <input
-            className='block border-2 w-60 lg:w-96 p-2 border-black rounded-2xl mt-4 mb-4'
+            className='block border-2 w-60 h-11 lg:w-96 p-2 border-black rounded-full mt-4 mb-4 placeholder-black'
             type='text'
             id='email'
             name='email'
@@ -64,20 +64,20 @@ const Login = () => {
             autoFocus
           />
         </label>
-        <label className='opacity-75 mb-4 text-xs' htmlFor='password'>
+        <label className='opacity-75 mb-4 text-sm' htmlFor='password'>
           Enter password
           <input
-            className='block border-2 w-60 lg:w-96 p-2 border-black rounded-2xl mt-4 mb-4'
+            className='block border-2 w-60 h-11 lg:w-96 p-2 border-black rounded-full mt-4 mb-4 placeholder-black'
             type='password'
             id='password'
             name='password'
             value={credentials.password}
             onChange={handleChange}
-            placeholder='Enter a strong password'
+            placeholder='Enter your password'
           />
         </label>
         <button
-          className='bg-black w-60 lg:w-96 rounded-2xl text-white p-2 font-bold'
+          className='bg-black w-60 h-11 lg:w-96 rounded-full text-white p-2 font-bold'
           type='submit'
         >
           Log in
