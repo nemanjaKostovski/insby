@@ -28,7 +28,6 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await api.post('/session/customer-sign-in', {
-        autoRegister: true,
         login: credentials.email,
         password: credentials.password,
       });
